@@ -3,7 +3,8 @@
 pkgname=ydict-bin
 pkgver=1.2
 pkgrel=1
-pkgdesc="Yet another command-line youdao dictionary for geeks!" arch=("x86_64")
+pkgdesc="Yet another command-line youdao dictionary for geeks!"
+arch=("x86_64")
 url="https://github.com/TimothyYe/ydict"
 license=("MIT")
 provides=("ydict")
