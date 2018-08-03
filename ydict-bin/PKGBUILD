@@ -1,0 +1,24 @@
+# Maintainer: Guangchuang Yu <guangchuangyu@gmail.com>
+
+pkgname=ydict-bin
+pkgver=1.2
+pkgrel=1
+pkgdesc="Yet another command-line youdao dictionary for geeks!" arch=("x86_64")
+url="https://github.com/TimothyYe/ydict"
+license=("MIT")
+provides=("ydict")
+
+case "$CARCH" in
+    x86_64)
+        _arch=linux64
+        ;;
+esac
+
+source=("https://github.com/TimothyYe/ydict/releases/download/V$pkgver/ydict-$_arch-$pkgver.tar.gz")
+md5sums=("SKIP")
+
+package() {
+    mkdir -p "$pkgdir/usr/bin"
+    mv $srcdir/ydict $pkgdir/usr/bin
+}
+
