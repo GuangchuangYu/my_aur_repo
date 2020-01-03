@@ -1,7 +1,7 @@
 # Maintainer: Guangchuang Yu <guangchuangyu@gmail.com>
 
 pkgname=ydict-bin
-pkgver=1.2
+pkgver=2.0
 pkgrel=1
 pkgdesc="Yet another command-line youdao dictionary for geeks!"
 arch=("x86_64")
